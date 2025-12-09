@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>မင်္ဂလာဆောင်ရက် စောင့်ကြည့်ခြင်း</title>
+    <meta name="description" content="Aug 8 2026 အတွက် မင်္ဂလာဆောင်ရက် countdown">
+    <meta name="theme-color" content="#d4a76a">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="icons/icon-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">မင်္ဂလာဆောင်ရက် စောင့်ကြည့်ခြင်း</h1>
+            <p class="subtitle">"ချစ်ခြင်းမေတ္တာဖြင့် အတူတကွ လက်တွဲရန်"</p>
+        </header>
+
+        <main>
+            <div class="countdown-container">
+                <div class="couple-names">
+                    <div class="name">မောင်သန်းထွန်း</div>
+                    <div class="heart"><i class="fas fa-heart"></i></div>
+                    <div class="name">မခိုင်စံရတနာ</div>
+                </div>
+                
+                <div class="countdown-display">
+                    <div class="time-unit">
+                        <span id="days">0</span>
+                        <div class="label">ရက်</div>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <span id="hours">0</span>
+                        <div class="label">နာရီ</div>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <span id="minutes">0</span>
+                        <div class="label">မိနစ်</div>
+                    </div>
+                    <div class="separator">:</div>
+                    <div class="time-unit">
+                        <span id="seconds">0</span>
+                        <div class="label">စက္ကန့်</div>
+                    </div>
+                </div>
+
+                <div class="wedding-date">
+                    <i class="fas fa-calendar-alt"></i>
+                    မင်္ဂလာဆောင်ရက် - သြဂုတ် ၈၊ ၂၀၂၆
+                </div>
+            </div>
+
+            <div class="additional-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <h3>မင်္ဂလာဆောင်ပွဲနေရာ</h3>
+                    <p>မင်္ဂလာရိပ်သာ၊ ရန်ကုန်မြို့</p>
+                    <p>နံနက် ၁၀:၀၀ မှ ညနေ ၄:၀၀ အထိ</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>လက်ဆောင်များ</h3>
+                    <p>လက်ဆောင်များအတွက် ကျေးဇူးတင်ပါသည်။</p>
+                    <p>မိသားစုနှင့် မိတ်ဆွေများကိုသာ ဖိတ်ကြားပါသည်။</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>ဖျော်ဖြေရေး</h3>
+                    <p>အထူးဖိတ်ကြားထားသော ဂီတအဖွဲ့မှ</p>
+                    <p>အသက် (၅၀) ပြည့် ဂီတပညာရှင် ဦးစိုးဝင်း</p>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <h3><i class="fas fa-chart-line"></i> မင်္ဂလာဆောင်ရက်အထိ ကျန်ရှိချိန်</h3>
+                <div class="progress-bar">
+                    <div class="progress" id="progress-bar"></div>
+                </div>
+                <div class="progress-text" id="progress-text">0% ကျန်ရှိပါသည်</div>
+            </div>
+
+            <div class="pwa-install">
+                <button id="installBtn" class="install-btn">
+                    <i class="fas fa-download"></i> ဖုန်းတွင် Install လုပ်ရန်
+                </button>
+                <p class="pwa-info">ဒီဝက်ဘ်ဆိုက်ကို ဖုန်းပေါ်တွင် App အဖြစ် သိမ်းဆည်းနိုင်ပါသည်။</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>ကျေးဇူးပြု၍ မင်္ဂလာဆောင်ပွဲသို့ အချိန်မီလာရောက်ပါရန် ဖိတ်ခေါ်အပ်ပါသည်။</p>
+            <p>လမ်းညွှန်ချက်များအတွက် 09-123456789 သို့ ဆက်သွယ်နိုင်ပါသည်။</p>
+            <div class="footer-icons">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-ring"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+        </footer>
+    </div>
+
+    <div class="floating-hearts"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registered:', registration);
+                    })
+                    .catch(error => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+        
+        // PWA Install Prompt
+        let deferredPrompt;
+        const installBtn = document.getElementById('installBtn');
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installBtn.style.display = 'block';
+            
+            installBtn.addEventListener('click', () => {
+                installBtn.style.display = 'none';
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the install prompt');
+                    } else {
+                        console.log('User dismissed the install prompt');
+                    }
+                    deferredPrompt = null;
+                });
+            });
+        });
+        
+        window.addEventListener('appinstalled', () => {
+            console.log('PWA was installed');
+            installBtn.style.display = 'none';
+            deferredPrompt = null;
+        });
+    </script>
+</body>
+</html>
